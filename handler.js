@@ -1,6 +1,6 @@
 'use strict';
 
-const gpxBasicStats = require('../gpx-basic-stats/gpx-basic-stats.js')
+const gpxBasicStats = require('gpx-basic-stats')
 
 module.exports.gpxStats = async event => {
 
