@@ -4,8 +4,15 @@
   "description": "REST Endpoint that returns basic statistics about an uploaded GPX route.",
   "main": "handler.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon --exec 'serverless offline' -e 'js yml json'"
   },
   "author": "Taylor Callsen <taylor.callsen@gmail.com> (https://taylor.callsen.me/)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.4",
+    "serverless-offline": "^6.0.0-alpha.43"
+  },
+  "dependencies": {
+    "busboy": "^0.3.1"
+  }
 }

@@ -5,10 +5,13 @@ provider:
   runtime: nodejs10.x
   stage: prod
 
+plugins:
+  - serverless-offline
+
 functions:
   gpxBasicStats:
     handler: handler.gpxStats
     events:
       - http:
           path: ping
-          method: get
+          method: post
