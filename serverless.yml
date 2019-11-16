@@ -13,5 +13,5 @@ functions:
     handler: handler.gpxStats
     events:
       - http:
-          path: ping
+          path: getStats
           method: post
