@@ -11,6 +11,9 @@ module.exports.gpxStats = async event => {
   //  https://www.npmjs.com/package/gpx-basic-stats
   const statistics = gpxBasicStats( gpxFileContents ) 
   
+  // print computed stats to CloudWatch logs
+  console.log(statistics)
+
   // return response - set response code based on if statistics
   //  were successfully calculated
   return {
