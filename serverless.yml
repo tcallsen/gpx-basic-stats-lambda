@@ -1,0 +1,14 @@
+service: gpx-basic-stats
+
+provider:
+  name: aws
+  runtime: nodejs10.x
+  stage: prod
+
+functions:
+  gpxBasicStats:
+    handler: handler.gpxStats
+    events:
+      - http:
+          path: ping
+          method: get
